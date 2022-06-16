@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculator.MainController">
+  <children>
+    <MenuBar prefHeight="8.0" prefWidth="640.0" VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="423.0" prefWidth="723.0" style="-fx-background-color: #8499B1;" VBox.vgrow="ALWAYS">
+      <children>
+            <Button alignment="CENTER" layoutX="33.0" layoutY="178.0" mnemonicParsing="false" onAction="#num_1" prefHeight="74.0" prefWidth="66.0" style="-fx-background-color: #D4C2FC;" text="1" />
+            <TextField fx:id="display" alignment="CENTER" layoutX="159.0" layoutY="31.0" prefHeight="114.0" prefWidth="282.0">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </TextField>
+            <Button layoutX="106.0" layoutY="178.0" mnemonicParsing="false" onAction="#num_2" prefHeight="74.0" prefWidth="66.0" style="-fx-background-color: #D4C2FC;" text="2" />
+            <Button layoutX="431.0" layoutY="327.0" mnemonicParsing="false" onAction="#equals" prefHeight="59.0" prefWidth="66.0" style="-fx-background-color: #D4C2FC;" text="=" />
+            <Button layoutX="414.0" layoutY="203.0" mnemonicParsing="false" onAction="#addition" prefHeight="36.0" prefWidth="39.0" style="-fx-background-color: #D4C2FC;" text="+" />
+            <Button layoutX="464.0" layoutY="203.0" mnemonicParsing="false" onAction="#subtraction" prefHeight="36.0" prefWidth="39.0" style="-fx-background-color: #D4C2FC;" text="-" />
+            <Button layoutX="414.0" layoutY="270.0" mnemonicParsing="false" onAction="#multiplication" prefHeight="36.0" prefWidth="39.0" style="-fx-background-color: #D4C2FC;" text="*" />
+            <Button layoutX="464.0" layoutY="270.0" mnemonicParsing="false" onAction="#division" prefHeight="36.0" prefWidth="39.0" style="-fx-background-color: #D4C2FC;" text="/" />
+            <Button layoutX="181.0" layoutY="179.0" mnemonicParsing="false" onAction="#num_3" prefHeight="74.0" prefWidth="66.0" style="-fx-background-color: #D4C2FC;" text="3" />
+            <Button layoutX="34.0" layoutY="282.0" mnemonicParsing="false" onAction="#num_4" prefHeight="74.0" prefWidth="66.0" style="-fx-background-color: #D4C2FC;" text="4" />
+            <Button layoutX="106.0" layoutY="282.0" mnemonicParsing="false" onAction="#num_5" prefHeight="74.0" prefWidth="66.0" style="-fx-background-color: #D4C2FC;" text="5" />
+            <Button layoutX="181.0" layoutY="282.0" mnemonicParsing="false" onAction="#num_6" prefHeight="74.0" prefWidth="66.0" style="-fx-background-color: #D4C2FC;" text="6" />
+            <Button layoutX="34.0" layoutY="375.0" mnemonicParsing="false" onAction="#num_7" prefHeight="74.0" prefWidth="66.0" style="-fx-background-color: #D4C2FC;" text="7" />
+            <Button layoutX="106.0" layoutY="375.0" mnemonicParsing="false" onAction="#num_8" prefHeight="74.0" prefWidth="66.0" style="-fx-background-color: #D4C2FC;" text="8" />
+            <Button layoutX="181.0" layoutY="375.0" mnemonicParsing="false" onAction="#num_9" prefHeight="74.0" prefWidth="66.0" style="-fx-background-color: #D4C2FC;" text="9" />
+            <Button layoutX="410.0" layoutY="435.0" mnemonicParsing="false" onAction="#clear" prefHeight="59.0" prefWidth="109.0" style="-fx-background-color: #D4C2FC;" text="Clear" />
+            <Button layoutX="106.0" layoutY="465.0" mnemonicParsing="false" onAction="#num_0" prefHeight="74.0" prefWidth="66.0" style="-fx-background-color: #D4C2FC;" text="0" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
